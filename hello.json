@@ -1,0 +1,22 @@
+
+{
+	"version": "0.2.0",
+	"configurations": [
+        {
+            "name": "Attach to node",
+            "type": "node",
+            "request": "attach",
+            "restart": true,
+            "port": 9229
+          },
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "Launch Program",
+			"skipFiles": [
+				"<node_internals>/**"
+			],
+			"program": "${workspaceFolder}/server.js"
+		}
+	]
+}
